@@ -1,0 +1,25 @@
+import React from 'react';
+import { GraduationCap } from 'lucide-react';
+
+export const Footer: React.FC = () => {
+  return (
+    <footer className="bg-gray-50 border-t border-gray-200 pt-12 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+          <div className="flex items-center gap-2 mb-4 md:mb-0">
+            <GraduationCap className="h-6 w-6 text-indigo-600" />
+            <span className="font-bold text-xl text-gray-900">Angrezzify</span>
+          </div>
+          <div className="flex space-x-6 text-sm text-gray-500">
+            <a href="#" className="hover:text-indigo-600 transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-indigo-600 transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-indigo-600 transition-colors">Support</a>
+          </div>
+        </div>
+        <div className="text-center text-sm text-gray-400 border-t border-gray-200 pt-8">
+          &copy; {new Date().getFullYear()} Angrezzify. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
